@@ -30,7 +30,7 @@ The **Smartwatch Web Application** is a feature-rich digital stopwatch built usi
 │── 📄 README.md       # Project documentation
 ```
 
-# [Live Demo💥]()
+# [Live Demo💥](https://khushalrathod1207.github.io/PRODIGY_WD_02/)
 
 ## 📚 What I Learned
 
