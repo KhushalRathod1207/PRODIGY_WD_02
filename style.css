@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6e7fdb, #a1c4fd);
+}
+
+.stopwatch-container {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.stopwatch-container:hover {
+    transform: scale(1.05);
+}
+
+.timer {
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #4e73df;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.controls button {
+    background-color: #4e73df;
+    color: white;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.controls button:hover {
+    background-color: #5c85df;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.laps {
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.laps li {
+    font-size: 22px;
+    color: #2c3e50;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f4f7fc;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.laps li:hover {
+    background: #e9effa;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .stopwatch-container {
+        padding: 20px;
+    }
+
+    .timer {
+        font-size: 60px;
+    }
+
+    .controls {
+        grid-template-columns: 1fr;
+        /* Stack buttons vertically */
+    }
+
+    .controls button {
+        padding: 15px 20px;
+    }
+
+    .laps li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        font-size: 50px;
+    }
+
+    .controls button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .laps li {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
