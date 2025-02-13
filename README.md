@@ -56,18 +56,21 @@ Follow these steps to run the Stopwatch Web App on your local machine:
    open index.html
    ```
 
-### 🛠️ Future Enhancements
+## 🛠️ Future Enhancements
 
 - 🔹 Add a dark mode toggle
 - 🔹 Include a countdown timer feature
 - 🔹 Store lap times using local storage
 
-### 🤝 Contribution
+## 🤝 Contribution
 
 Feel free to contribute! Fork the repository, create a new branch, make your changes, and submit a pull request.
 
-### 📬 Contact
+## 📬 Contact
 
 - 📧 Email: khushalr010@gmail.com
 - 🔗 LinkedIn: www.linkedin.com/in/khushal-rathod
 
+## License
+
+This project is licensed under the [MIT](LICENSE)
